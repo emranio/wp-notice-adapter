@@ -3,8 +3,6 @@ namespace Emranio;
 
 defined( 'ABSPATH' ) || exit;
 
-if(!class_exists('\Emranio\WP_Notice_Adapter')):
-
 class WP_Notice_Adapter{
 
     /**
@@ -489,5 +487,3 @@ class WP_Notice_Adapter{
 		return self::$instance->config($text_domain, (is_null($unique_id) ? uniqid() : $unique_id));
 	}
 }
-
-endif;
